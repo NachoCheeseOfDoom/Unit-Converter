@@ -1,12 +1,41 @@
 body {
   margin: 0;
   text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .hero {
   background: #6943fe;
   color: white;
   padding: 30px;
+}
+
+.input-num{
+    width: 150px;
+    height: 80px;
+    top: 100px;
+    background-color: #6943fe;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+}
+.btnConvert{
+  display: grid;
+  margin: auto;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  cursor: pointer;
+  color: #3D3D3D;
+  font-weight: bold;
 }
 
 .main {
@@ -17,4 +46,12 @@ body {
 .section {
   background: white;
   padding: 5px;
+}
+
+.section-title{
+  color: #5A537B;
+}
+
+.section-content{
+  color: #353535;
 }

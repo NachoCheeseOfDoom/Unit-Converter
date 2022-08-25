@@ -1,4 +1,4 @@
-const numberInput = document.getElementById("numInput");
+let numberInput = document.getElementById("numInput");
 const convertBtn = document.getElementById("conBtn")
 const length = document.getElementById("lengthP");
 const volume = document.getElementById("volumeP");
@@ -11,13 +11,20 @@ const gallonToLiter = 3.78541;
 const kiloToPound = 2.204;
 const poundToKilo = 0.453592;
 
+
+
 convertBtn.addEventListener("click", function () {
+  if (numberInput.value <= 0 || numberInput.value > 100) {
+    alert("Number can't be less than 1")
+    numberInput.value = "";
+  }
   length.innerHTML = meterAndFeet();
   volume.innerHTML = litersAndGallon();
   mass.innerHTML = kilosAndPounds();
 });
 
 function meterAndFeet() {
+
   let inputValue = numberInput.value;
   let totalFeet = inputValue * metersToFeet;
   let totalMeters = inputValue * feetToMeters;

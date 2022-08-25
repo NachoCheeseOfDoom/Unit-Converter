@@ -10,25 +10,31 @@
   <body>
     <div class="hero">
       <h1>Metric/Imperical Unit Conversion</h1>
-      <input min="0" class="input-num" type="number" placeholder="0" />
-      <button class="btnConvert">Convert</button>
+      <input
+        id="numInput"
+        min="0"
+        class="input-num"
+        type="number"
+        placeholder="0"
+      />
+      <button id="conBtn" class="btnConvert">Convert</button>
     </div>
     <div class="main">
       <div class="section">
         <h3 class="section-title">Length (Meter/Feet)</h3>
-        <p class="section-content"></p>20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+        <p id="lengthP" class="section-content"></p>
       </div>
     </div>
     <div class="main">
       <div class="section">
         <h3 class="section-title">Volume (Liters/Gallons)</h3>
-        <p class="section-content"></p>20 liters = 5.284 gallons | 20 gallons = 75.708 liters</p>
+        <p id="volumeP" class="section-content"></p>
       </div>
     </div>
     <div class="main">
       <div class="section">
         <h3 class="section-title">Mass (Kilograms/Pounds)</h3>
-        <p class="section-content"></p>20 kilos = 44.092 pounds | 20 pounds = 9.072 kilos</p>
+        <p id="massP" class="section-content"></p>
       </div>
     </div>
     <script src="main.js"></script>
